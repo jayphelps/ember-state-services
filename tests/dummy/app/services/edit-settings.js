@@ -1,8 +1,8 @@
 import Ember from 'ember';
 import StateMixin from 'ember-state-services/mixin';
 
-export default Ember.Object.extend(StateMixin, {
-  stateName: 'edit-email',
+export default Ember.Service.extend(StateMixin, {
+  stateName: 'edit-settings',
   setupState: function(factory, model) {
     return factory.create({
       content: model

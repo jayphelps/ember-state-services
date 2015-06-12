@@ -1,0 +1,10 @@
+<label>Favorite color: {{input value=settingsState.favoriteColor}}</label><br>
+<label>Piss you off randomly?: {{input type="checkbox" checked=settingsState.pissMeOff}}</label><br>
+
+<button {{action "save"}}>
+  Save
+</button>
+
+<a href="#" {{action "cancel"}}>
+  cancel
+</a>

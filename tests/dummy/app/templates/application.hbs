@@ -1,16 +1,6 @@
-{{#link-to 'index'}}<h2>State Demo</h2>{{/link-to}}
-<div class="master-detail">
-  <div class='master'>
-    <ul>
-      {{#each email in model}}
-        <li>
-          {{#link-to 'email' email}} {{email.subject}} {{/link-to}}
-        </li>
-      {{/each}}
-    </ul>
-  </div>
+{{edit-settings}}
 
-  <div class='detail'>
-    {{outlet}}
-  </div>
-</div>
+<hr>
+
+Current favoriteColor: {{settings.favoriteColor}}
+Current pissMeOff: {{settings.pissMeOff}}
